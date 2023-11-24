@@ -1,0 +1,47 @@
+name: blocklet-project
+title: blocklet-project
+description: A Blocklet Server blocklet
+keywords:
+  - blocklet
+  - react
+group: static
+did: z2qaHHo3VeKA37qYquua1iNvDBLdpryq5JkLp
+main: dist
+author:
+  name: Felix
+  email: 2072738187yu@gamil.com
+repository:
+  type: git
+  url: git+https://github.com/blocklet/create-blocklet.git
+specVersion: 1.1.1
+version: 0.1.0
+logo: logo.png
+files:
+  - logo.png
+  - screenshots
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: "*"
+    port: BLOCKLET_PORT
+    protocol: http
+community: ""
+documentation: ""
+homepage: ""
+license: ""
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: ">=1.6.29"
+  os: "*"
+  cpu: "*"
+scripts:
+  dev: npm run start
+environments: []
+capabilities: {}
+screenshots: []
+components: []
