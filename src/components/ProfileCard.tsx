@@ -6,9 +6,9 @@ import ProfileEdit, { ProfileEditMethods } from './ProfileEdit';
 const ProfileCard = () => {
   const [isFlipped, setIsFlipped] = useState(true);
   const profileEditRef = useRef<ProfileEditMethods>(null);
-  const onButtonClick = (isFlipped: boolean) => {
+  const onButtonClick = async (isFlipped: boolean) => {
     if (isFlipped) {
-      const isValid = profileEditRef.current?.handleButtonClick();
+      const isValid = await profileEditRef.current?.handleButtonClick();
       if (isValid) {
         setIsFlipped(true);
       }

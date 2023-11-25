@@ -32,7 +32,6 @@ const ProfileEdit = forwardRef<ProfileEditMethods, ProfileEditProps>(({ classNam
       if (formikRef.current.isValid) {
         setProfileInfo(formikRef.current.values);
       }
-      console.log(formikRef.current.isValid);
       return formikRef.current.isValid;
     }
   };
