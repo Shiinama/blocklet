@@ -3,13 +3,10 @@
 @tailwind utilities;
 
 .profileCard {
-  border-radius: 12px;
   box-shadow: 0 0 40px rgba(0, 0, 139, 0.2), -5px -5px 10px rgba(0, 0, 139, 0.8), 5px -5px 40px rgba(0, 0, 139, 0.8),
     -5px 5px 10px rgba(0, 0, 139, 0.2), 5px 5px 10px rgba(0, 0, 139, 0.2);
   position: absolute;
   backface-visibility: hidden;
-  width: 370px;
-  height: 660px;
 }
 
 #app {

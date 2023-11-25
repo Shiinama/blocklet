@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Home from './pages/home';
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
+import useResize from './hooks/useResize';
 
 const theme = extendTheme({
   config: {
@@ -24,7 +25,7 @@ function App() {
 export default function WrappedApp() {
   // While the blocklet is deploy to a sub path, this will be work properly.
   const basename = (window as any)?.blocklet?.prefix || '/';
-
+  useResize();
   return (
     <ChakraProvider theme={theme}>
       <Router basename={basename}>

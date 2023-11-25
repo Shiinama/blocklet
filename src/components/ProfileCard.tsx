@@ -29,14 +29,14 @@ const ProfileCard = () => {
   return (
     <>
       <motion.div
-        className="w-full bg-gray-200 rounded-t-lg profileCard relative flex flex-col items-center"
+        className="md:w-[370px]  md:h-[660px] rounded-none md:rounded-xl w-full h-full bg-gray-200 profileCard relative flex flex-col items-center"
         animate={!isFlipped ? 'visible' : 'hidden'}
         style={{ display: isFlipped ? 'flex' : 'none' }}
         variants={frontVariants}>
         <ProfilePreview onButtonClick={onButtonClick} />
       </motion.div>
       <motion.div
-        className="w-full bg-gray-200 rounded-t-lg profileCard relative flex flex-col items-center"
+        className="md:w-[370px] md:h-[660px] rounded-none  md:rounded-xl w-full h-full bg-gray-200 profileCard relative flex flex-col items-center"
         animate={isFlipped ? 'visible' : 'hidden'}
         style={{ display: isFlipped ? 'none' : 'flex' }}
         variants={backVariants}>
