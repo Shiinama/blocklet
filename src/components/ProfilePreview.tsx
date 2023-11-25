@@ -28,8 +28,8 @@ const ProfilePreview = ({ onButtonClick }: { onButtonClick: (value: boolean) => 
         <Empty />
       ) : (
         <div className="w-full">
-          <AspectRatio className="w-full md:rounded-t-lg bg-gradient-custom" ratio={1}>
-            <Image alt="avatar" src={profileInfo.avatar} />
+          <AspectRatio className="w-full bg-gradient-custom" ratio={1}>
+            <Image className="md:rounded-t-lg" alt="avatar" src={profileInfo.avatar} />
           </AspectRatio>
           <div className="space-y-4 my-6 flex flex-col items-center">
             <p className="text-4xl">{profileInfo.name}</p>
