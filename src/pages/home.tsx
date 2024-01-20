@@ -8,7 +8,6 @@ import { loadBasic } from 'tsparticles-basic';
 
 import { options } from '../config/particlesConfig';
 import { Engine } from 'tsparticles-engine';
-import useProfileStore from '../store/ProfileStore';
 
 async function loadStarsPreset(engine: Engine, refresh = true): Promise<void> {
   await loadBasic(engine, false);

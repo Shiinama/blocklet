@@ -1,11 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { createBlockletPlugin } from 'vite-plugin-blocklet';
-import svgr from 'vite-plugin-svgr';
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
 
 // https://vitejs.dev/config/
-export default defineConfig(() => {
-  return {
-    plugins: [react(), createBlockletPlugin(), svgr()],
-  };
-});
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      "/api": "http://localhost:3000",
+    },
+  },
+})

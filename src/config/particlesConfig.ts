@@ -1,5 +1,3 @@
-import { MoveDirection, OutMode } from 'tsparticles-engine';
-
 export const options = {
   background: {
     color: '#000',

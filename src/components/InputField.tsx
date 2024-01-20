@@ -23,7 +23,7 @@ const InputField: React.FC<InputFieldProps> = ({
   const error = meta.touched && meta.error ? meta.error : null;
   return (
     <FormControl className={className} {...formControlProps} isInvalid={!!error}>
-      <FormLabel className={`tw-mb-2 ${labelClassName}`}>{label}</FormLabel>
+      <FormLabel className={`mb-2 ${labelClassName}`}>{label}</FormLabel>
       <Input
         borderColor={'#1a1b29'}
         _hover={{
